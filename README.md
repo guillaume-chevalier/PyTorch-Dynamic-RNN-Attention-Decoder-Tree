@@ -10,7 +10,7 @@ For a full implementation of an RNN decoder tree (but without attention mechanis
 
 I wrote the code of the current repository after applying to the [AI Grant](https://aigrant.org/) while waiting for a decision. Me and my teammate ended up in the top 10% of applicants with that project, but the number of grants awarded is more limited. 
 
-## References and related work: 
+## References and related work 
 - [Top-down Tree Long Short-Term Memory Networks](https://github.com/XingxingZhang/td-treelstm) - Decoder Tree LSTMs, without attention mechanisms
 - [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
 - [Attention and Augmented Recurrent Neural Networks](https://distill.pub/2016/augmented-rnns/) - Quick overview of attention mechanisms in RNNs, along other interesting recent subjects
