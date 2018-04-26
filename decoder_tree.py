@@ -1,8 +1,9 @@
+# Note: this is a rough draft written quickly so as
+# to draft an idea. It does not compile for sure. 
 
 from html_tools import nn_tree_to_html
 
 import torch
-
 import numpy as np
 
 import random
