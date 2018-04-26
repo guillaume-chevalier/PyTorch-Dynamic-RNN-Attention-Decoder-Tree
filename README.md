@@ -4,11 +4,19 @@ This is code I wrote within less than an hour so as to very roughly draft how I 
 
 ## The idea 
 
-This decoder tree is meant to take as an input a neural embedding (such as a convolutional's last feature map) to decode it into programming code as a decoder tree (for example, generating a HTML tree of code with this RNN decoder tree, for converting a screenshot of a website to the code generating that screenshot). 
+This decoder tree is meant to take as an input a neural embedding (such as a CNN's last feature map) to decode it into programming code as a decoder tree (for example, generating a HTML tree of code with this RNN decoder tree, for converting a screenshot of a website to the code generating that screenshot). 
 
 For a full implementation of an RNN decoder tree (but without attention mechanisms such as I have also thought about), you may want to check out [that other implementation](https://github.com/XingxingZhang/td-treelstm).
 
 I wrote the code of the current repository after applying to the [AI Grant](https://aigrant.org/) while waiting for a decision. Me and my teammate ended up in the top 10% of applicants with that project, but the number of grants awarded is more limited. 
+
+## Attention Mechanisms
+
+Four different Attention Mechanisms could be used at different key places: 
+- In the convolutional feature map between the encoder CNN and the decoder RNN Tree.
+- Across depth to capture context.
+- Across breadth to keep track of what remains yet to decode. 
+- Also, note that it may be possible to generate a (partial) render of the "yet-generated" HTML, so as to pass that to a second CNN encoder on which the fourth attention module could operate. This dourth attention module would be repeated at every depth, as the third module which is also across depth at every depth level. This way, during decoding, it would be possible to update the view for the decoder at every level throughout decoding, thanks to dynamical neural networks (E.G.: TensorFlow Eager mode, or PyTorch). 
 
 ## References and related work 
 - [Top-down Tree Long Short-Term Memory Networks](https://github.com/XingxingZhang/td-treelstm) - Decoder Tree LSTMs, without attention mechanisms
