@@ -16,7 +16,7 @@ Four different Attention Mechanisms could be used at different key places:
 - In the convolutional feature map between the encoder CNN and the decoder RNN Tree.
 - Across depth to capture context.
 - Across breadth to keep track of what remains yet to decode. 
-- Also, note that it may be possible to generate a (partial) render of the "yet-generated" HTML, so as to pass that to a second CNN encoder on which the fourth attention module could operate. This dourth attention module would be repeated at every depth, as the third module which is also across depth at every depth level. This way, during decoding, it would be possible to update the view for the decoder at every level throughout decoding, thanks to dynamical neural networks (E.G.: TensorFlow Eager mode, or PyTorch). 
+- Also, note that it may be possible to generate a (partial) render of the "yet-generated" HTML, so as to pass that to a second CNN encoder on which a fourth attention module could operate. This fourth attention module would be repeated at every depth, as the third module which is also across depth at every depth level. This way, during decoding, it would be possible to update the view for the decoder at every level throughout decoding, thanks to dynamical neural networks (E.G.: TensorFlow Eager mode, or PyTorch). 
 
 ## References and related work 
 - [Top-down Tree Long Short-Term Memory Networks](https://github.com/XingxingZhang/td-treelstm) - Decoder Tree LSTMs, without attention mechanisms
