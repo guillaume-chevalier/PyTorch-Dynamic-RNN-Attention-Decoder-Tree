@@ -8,7 +8,7 @@ This decoder tree is meant to take as an input a neural embedding (such as a CNN
 
 For a full implementation of an RNN decoder tree (but without attention mechanisms such as I have also thought about), you may want to check out [that other implementation](https://github.com/XingxingZhang/td-treelstm).
 
-I wrote the code of the current repository after applying to the [AI Grant](https://aigrant.org/) while waiting for a decision. Me and my teammate ended up in the top 10% of applicants with that project, but the number of grants awarded is more limited. 
+I wrote the code of the current repository after applying to the [AI Grant](https://aigrant.org/) while waiting for a decision. Me and my [teammate](https://github.com/jtoy) ended up in the top 10% of applicants with that project, but the number of grants awarded is more limited. 
 
 ## Attention Mechanisms
 
